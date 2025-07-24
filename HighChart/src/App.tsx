@@ -39,6 +39,36 @@ function App() {
       height: "100%",
     },
 
+    responsive: {
+      rules: [
+        {
+          condition: {
+            maxWidth: 640,
+          },
+          chartOptions: {
+            chart: {
+              height: 300,
+            },
+            legend: {
+              layout: "horizontal",
+              align: "center",
+              verticalAlign: "bottom",
+            },
+            plotOptions: {
+              pie: {
+                dataLabels: {
+                  distance: 10,
+                  style: {
+                    fontSize: "12px",
+                  },
+                },
+              },
+            },
+          },
+        },
+      ],
+    },
+
     title: {
       text: title,
       style: {
@@ -89,7 +119,7 @@ function App() {
         borderColor: "#fff",
         dataLabels: {
           enabled: true,
-          format: "<b>{point.name}</b>: {point.y} Marks", 
+          format: "<b>{point.name}</b>: {point.y} Marks",
           style: {
             fontSize: "14px",
             color: "#333",
