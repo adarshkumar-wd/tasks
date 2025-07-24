@@ -26,6 +26,12 @@ function App() {
       age: 25,
       y: 63,
     },
+
+    {
+      name: "Priya",
+      age: 25,
+      y: 23,
+    },
   ];
 
   const options = (
