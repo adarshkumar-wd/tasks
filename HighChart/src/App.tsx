@@ -36,7 +36,7 @@ function App() {
     chart: {
       type: "pie",
       backgroundColor: "yellow",
-      height: "50%",
+      height: "100%",
     },
 
     title: {
@@ -132,9 +132,9 @@ function App() {
           Student Marks Visualization
         </h1>
 
-        <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full max-w-7xl flex flex-col xl:flex-row gap-6 items-center">
           {/* Pie Chart */}
-          <div className="bg-white rounded-2xl shadow-xl p-6">
+          <div className="bg-white rounded-2xl shadow-xl p-2 w-full xl:w-[45%] h-fit">
             <h2 className="text-xl font-semibold text-gray-800 text-center mb-4">
               Pie Chart
             </h2>
@@ -145,7 +145,7 @@ function App() {
           </div>
 
           {/* Donut Chart */}
-          <div className="bg-white rounded-2xl shadow-xl p-6">
+          <div className="bg-white rounded-2xl shadow-xl w-full p-6 xl:w-[45%] h-fit">
             <h2 className="text-xl font-semibold text-gray-800 text-center mb-4">
               Donut Chart
             </h2>
